@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
 import Navbar from './Navbar';
-import Products from './Products';
-import Why from './WhyDyson';
-import BusinessSectors from './BusinessSectors';
-import FounderQuote from './FounderQuote';
-import HelpForm from './HelpForm';
-import Footer from './Footer'; 
+import Films from './Films';
+import CounterBox from './Counter';
 
 import './App.css';
+import AmelPhoto from './assets/amel.jpg'; // Import the photo
 
 export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -65,50 +62,45 @@ export default function App() {
 
       <div id="main-content">
         {/* Hero Section with Pastel Galaxy Gradient */}
-        <section id="home" className="w-screen h-screen bg-gradient-galaxy-pastel text-purple-900 flex flex-col justify-center items-center fade-in">
-          <div className="flex flex-col md:flex-row items-center gap-6 px-4">
-            <div className="text-left max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
-                Dyson Technology for Business
+        <section id="home" className="w-screen h-screen bg-gradient-galaxy-pastel text-purple-900 flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-8 fade-in">
+          <div className="flex flex-col md:flex-row items-center gap-6 w-full max-w-6xl"> {/* Adjust width to make text more spread out */}
+            {/* Photo Section */}
+            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-purple-900">
+              <img src={AmelPhoto} alt="Siti Amalia Nurfaidah" className="object-cover w-full h-full" />
+            </div>
+
+            {/* Text Section */}
+            <div className="text-left w-full max-w-4xl"> {/* Increased width for text */}
+              <h1 className="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
+                About Me
               </h1>
 
               <div className="card-container space-y-4 animate__animated animate__fadeInUp animate__delay-2s">
-                <p className="text-md md:text-lg leading-relaxed">
-                  From hand dryers and hair dryers, to vacuums and purifying fans, Dyson technology is engineered with your employees and guests in mind.
+                <p className="text-md md:text-lg leading-relaxed tracking-wide text-justify">
+                  I always admired Ernest Prakasa's journey—from a comedian to an actor, director, and now a producer with his own production house, Imajinari. His success and growth in the film industry inspire me greatly. Because of this admiration, I’ve actively sought opportunities to immerse myself in media and film. I’ve participated in various organizations related to these fields, including Media BEM FTUI, Sinematografi UI, and Creative Exercise FTUI.
                 </p>
               </div>
 
-              <button className="bg-purple-900 text-white font-semibold px-6 py-2 mt-6 rounded-full hover:bg-pink-300 transition duration-300 animate__animated animate__zoomIn animate__delay-3s">
-                Enquire Now
-              </button>
+
+              {/* Button with anchor link to #films */}
+              <a href="#films">
+                <button className="bg-purple-900 text-white font-semibold px-6 py-2 mt-6 rounded-full hover:bg-pink-300 transition duration-300 animate__animated animate__zoomIn animate__delay-3s">
+                  My Favorite Films
+                </button>
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Section dengan Gradient Pastel */}
-        <section id="products" className="fade-in bg-gradient-dmj-pastel animate__animated animate__zoomIn">
-          <Products />
+        {/* Section with Gradient Pastel */}
+        <section id="films" className="fade-in bg-gradient-dmj-pastel animate__animated animate__zoomIn">
+          <Films />
         </section>
 
-        <section id="why-dyson" className="fade-in bg-gradient-os-pastel animate__animated animate__fadeIn animate__delay-1s">
-          <Why />
+        <section id="counter" className="fade-in bg-gradient-os-pastel animate__animated animate__fadeIn animate__delay-1s">
+          <CounterBox />
         </section>
 
-        <section id="business-sectors" className="fade-in bg-gradient-aslab-pastel animate__animated animate__fadeInUp animate__delay-2s">
-          <BusinessSectors />
-        </section>
-
-        <section id="founder-quote" className="fade-in bg-gradient-os-pastel animate__animated animate__fadeIn animate__delay-3s">
-          <FounderQuote />
-        </section>
-
-        <section id="help-form" className="fade-in bg-gradient-os-pastel animate__animated animate__fadeIn animate__delay-4s">
-          <HelpForm />
-        </section>
-
-        <section id="footer" className="fade-in bg-gradient-os-pastel animate__animated animate__fadeIn animate__delay-5s">
-          <Footer />
-        </section>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
-import DysonLogo from './assets/DysonLogo.svg';
 
 export default function Navbar({ onSearch }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -12,26 +11,26 @@ export default function Navbar({ onSearch }) {
 
     const navItems = [
         { label: 'Home', href: '#home' },
-        { label: 'Products', href: '#products' },
-        { label: 'Why Dyson?', href: '#why-dyson' },
-        { label: 'For Business', href: '#business-sectors' },
-        { label: 'Founder’s Quote', href: '#founder-quote' },
-        { label: 'Help', href: '#help-form' },
-        { label: 'Contact', href: '#footer' }
+        { label: 'Favorite Films', href: '#films' },
+        { label: 'Counter', href: '#counter' },
     ];
 
     return (
-        <nav className="bg-white text-black shadow-md sticky top-0 z-50 px-6 py-4 font-Poppins">
+        <nav className="bg-white text-black shadow-md sticky top-0 z-50 px-6 py-6 font-Poppins">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                 
-                {/* Logo */}
-                <div className="flex items-center space-x-4">
-                    <img src={DysonLogo} alt="Dyson Logo" className="h-10 w-auto" />
+                {/* Nama - Siti Amalia Nurfaidah */}
+                <div className="flex items-center space-x-2">
+                    <span className="text-lg md:text-xl font-Poppins font-semibold tracking-wide text-[#5a189a]">
+                        Siti Amalia Nurfaidah
+                    </span>
                 </div>
+
+
 
                 {/* Nav Items */}
                 <div className="flex-1 flex justify-center">
-                    <ul className="flex space-x-6 font-bold text-sm md:text-base">
+                    <ul className="flex space-x-8 font-bold text-text-base md:text-lg">
                         {navItems.map(item => (
                             <li key={item.label}>
                                 <a
