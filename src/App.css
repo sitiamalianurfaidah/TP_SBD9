@@ -1,0 +1,357 @@
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.card-container {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi Transisi Halus */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari posisi yang lebih bawah */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Menjadi posisi normal */
+  }
+}
+
+/* Pastel Gradient Backgrounds */
+.bg-gradient-dmj {
+  background: linear-gradient(135deg, #fcbad3, #ffe0ac, #c2f0fc);
+}
+
+.bg-gradient-os {
+  background: linear-gradient(135deg, #d5aaff, #ffd6ec, #b5ead7);
+}
+
+.bg-gradient-pastel {
+  background: linear-gradient(135deg, #fcd1d1, #c7ceea, #b5ead7);
+}
+
+.navbar-pretty {
+  background: linear-gradient(to right, #dcb0ff, #b2fefa);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass effect background */
+.bg-navbarGlass {
+  background: rgba(186, 104, 200, 0.55); /* pastel purple translucent */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Fade-down animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fadeDown 0.8s ease-out;
+}
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.font-comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Optional hover color */
+.hover\\:text-pastelYellow:hover {
+  color: linear-gradient(to right, #3e1b7b, #7a2e8f, #d08f8d);
+}
+
+mark.highlight {
+  background-color: linear-gradient(to right, #3e1b7b, #7a2e8f, #d08f8d);/* pastel yellow */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark Gradient Backgrounds */
+.bg-gradient-dmj-dark {
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e, #3e3e3e);
+}
+
+.bg-gradient-os-dark {
+  background: linear-gradient(135deg, #393939, #4b4b4b, #616161);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #2a2a2a, #3d3d3d, #555555);
+}
+
+/* Dark Navbar Styling */
+.navbar-pretty-dark {
+  background: linear-gradient(to right, #4e4e4e, #2a2a2a);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Gradient Backgrounds with Item to White */
+.bg-gradient-dmj-dark-white {
+  background: linear-gradient(135deg, #2d1f5e, #6a4c9c, #ffffff);
+}
+
+.bg-gradient-os-dark-white {
+  background: linear-gradient(135deg, #4b3c59, #a68fd7, #ffffff);
+}
+
+.bg-gradient-dark-white {
+  background: linear-gradient(135deg, #2b2b2b, #4e4e7f, #ffffff);
+}
+
+/* Dark Navbar Styling with Gradient */
+.navbar-pretty-dark-white {
+  background: linear-gradient(to right, #3a2b6c, #702a8a, #d6b1d2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Galaxy-Themed Gradient */
+.bg-gradient-dmj-galaxy {
+  background: linear-gradient(135deg, #2a003b, #3b0b5b, #7e1d80, #f0d3d3);
+}
+
+.bg-gradient-os-galaxy {
+  background: linear-gradient(135deg, #1e2a47, #5e3c84, #c994d1);
+}
+
+.bg-gradient-galaxy {
+  background: linear-gradient(135deg, #0b1a3b, #5e428e, #ff5a95, #f5e0d1);
+}
+
+/* Galaxy-themed Navbar with Rose Gold */
+.navbar-pretty-galaxy {
+  background: linear-gradient(to right, #3e1b7b, #7a2e8f, #d08f8d);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Galaxy-themed Navbar */
+.navbar-pretty-galaxy {
+  background: linear-gradient(to right, #3e1b7b, #7a2e8f, #d08f8d);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Teks Navbar */
+.navbar-pretty-galaxy a {
+  color: white; /* Warna teks putih agar kontras dengan latar belakang gelap */
+}
+
+.navbar-pretty-galaxy a:hover {
+  color: #f5d1d1; /* Warna teks saat hover lebih cerah */
+}
+
+/* Search Input */
+.navbar-pretty-galaxy input {
+  background-color: rgba(255, 255, 255, 0.8); /* Sedikit transparan agar sesuai dengan tema */
+  border: 1px solid #ddd;
+  color: black;
+}
+
+.navbar-pretty-galaxy input:focus {
+  border-color: #f5d1d1; /* Fokus dengan warna cerah */
+  outline: none;
+}
+
+.galaxy-text {
+  background: linear-gradient(to right, #7f5af0, #ff6ec7); /* ungu ke pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-gradient-galaxy-pastel {
+  background: linear-gradient(to bottom right, #f3e5f5, #e1f5fe, #fce4ec);
+}
+
+.bg-gradient-dmj-pastel {
+  background: linear-gradient(to right, #f8bbd0, #e1bee7, #d1c4e9);
+}
+
+.bg-gradient-os-pastel {
+  background: linear-gradient(135deg, #d5aaff, #ffd6ec, #b5ead7);
+}
+
+.bg-gradient-aslab-pastel {
+  background: linear-gradient(to top left, #e1f5fe, #fff3e0, #fce4ec);
+}
+
+/* Gradient Pastel Galaxy */
+.bg-gradient-galaxy-pastel {
+  background: linear-gradient(to bottom right, #f3e5f5, #e1f5fe, #fce4ec);
+}
+
+/* Card Container dengan Background Putih Transparan */
+.bg-opacity-70 {
+  background-color: rgba(255, 255, 255, 0.7); /* Memastikan konten nggak hilang dengan latar belakang */
+}
+
+.text-gray-800 {
+  color: #333; /* Memberikan kontras agar teks lebih terbaca */
+}
+
+.bg-purple-600 {
+  background-color: #7e57c2; /* Tombol dengan warna ungu yang lebih gelap */
+}
+
+.bg-purple-700 {
+  background-color: #5e35b1; /* Warna tombol saat hover */
+}
+
+.text-white {
+  color: white;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-section h1 {
+  animation: slideFromBottom 1s ease-out;
+}
+
+.hero-section p {
+  animation: slideFromBottom 1.5s ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.move-left {
+  animation: moveFromLeft 1s ease-out;
+}
+
+/* Founder's Quote Section */
+.founder-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; /* Pindahkan teks ke kiri */
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Poppins', sans-serif; /* Gunakan font Poppins */
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.founder-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top left, rgba(236, 72, 153, 0.3), rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3));
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.founder-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  text-align: left; /* Pindahkan teks ke kiri */
+  padding: 2rem;
+}
+
+.quote-text {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.quote-author {
+  font-size: 2rem; /* Ukuran lebih besar untuk nama */
+  font-weight: 700; /* Bold untuk nama */
+  color: #fff;
+}
+
+.quote-author strong {
+  font-size: 2.5rem; /* Ukuran lebih besar dan menonjol untuk nama */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
